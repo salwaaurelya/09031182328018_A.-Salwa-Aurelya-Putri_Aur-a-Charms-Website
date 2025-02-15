@@ -1,0 +1,112 @@
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FAF7F2; /* Ivory White */
+    color: #8C6A5D; /* Muted Bronze */
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 10px 30px; /* Tambah padding agar lebih proporsional */
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid #D4B499; /* Soft Beige */
+}
+
+/* Brand Name */
+.navbar-brand {
+    font-family: "Playfair Display", serif; /* Elegan */
+    font-weight: 700;
+    font-size: 2rem; /* Perbesar agar lebih menonjol */
+    color: #B2957A !important; /* Champagne Gold */
+    letter-spacing: 1.2px;
+    padding-right: 20px; /* Beri jarak dari menu */
+}
+
+/* Navbar Menu */
+.navbar-nav .nav-link {
+    font-size: 1rem; /* Diperkecil agar tidak lebih besar dari brand */
+    font-weight: 500;
+    padding: 6px 10px; /* Lebih ramping */
+    color: #B2957A !important;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+    box-shadow: 0 4px 10px rgba(75, 59, 71, 0.2);
+    background-color: #8C6A5D; /* Muted Bronze */
+}
+
+/* Search Button */
+.btn-outline-success {
+    border-color: #B2957A;
+    color: #B2957A;
+    font-weight: 500;
+    padding: 8px 15px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+}
+
+.btn-outline-success:hover {
+    background-color: #B2957A;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Carousel Styling */
+.carousel-container {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.carousel-item img {
+    max-height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Caption Styling */
+.carousel-caption {
+    background: rgba(178, 149, 122, 0.6); /* Transparan dengan warna Champagne Gold */
+    padding: 18px;
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+    color: #FAF7F2; /* Ivory White */
+}
+
+/* Judul Slide */
+.carousel-caption h5 {
+    font-family: "Playfair Display", serif; /* Font elegan */
+    font-size: 1.8rem; /* Perbesar ukuran font */
+    font-weight: 800; /* Lebih bold */
+    letter-spacing: 1px; /* Tambah sedikit jarak antar huruf */
+}
+
+/* Subjudul atau teks tambahan */
+.carousel-caption p {
+    font-size: 1rem; /* Biarkan tetap lebih kecil dari judul */
+    font-weight: 400;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .carousel-container {
+        width: 90%;
+    }
+
+    .carousel-item img {
+        max-height: 350px;
+    }
+
+    .carousel-caption {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
